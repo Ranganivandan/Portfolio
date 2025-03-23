@@ -35,6 +35,13 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+// import notion from "./notion.png";
+// import spotigy from "./spotigy.png";
+// import chat from "./chat.png";
+// import task from "./task.png";
+// import ecom from "./e-com.png";
+// import burger from "./burger.png";
+// import social from "./socail.png";
 
 export const assets = {
   user_image,
@@ -78,31 +85,111 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "Portfolio Website",
+    description: "Frontend project",
     bgImage: "/work-1.png",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "AI-Powered Social Media Analytics Dashboard",
+    description: "Fullstack project",
+    bgImage: "/socail.png",
+  },
+  {
+    title: "Study Notion -Edtech platform",
+    description: "Backend development",
+    bgImage: "/notion.png",
+  },
+  {
+    title: "Online Burger Ordering System with Invoice Automation",
+    description: "Fullstack project",
+    bgImage: "/burger.png",
+  },
+  {
+    title: "E-commerce Website with Firebase Integration",
+    description: "Fullstack project",
+    bgImage: "/e-com.png",
+  },
+  {
+    title: "Task Management & Community Support Platform",
+    description: "Fullstack project",
+    bgImage: "/Task.png",
+  },
+  {
+    title: "Real-Time Chat Application",
+    description: "Fullstack project",
+    bgImage: "/chat.png",
+  },
+  {
+    title: "Spotify-Inspired Music Web App",
+    description: "Frontend project",
+    bgImage: "/spotigy.png",
+  },
+  {
+    title: "URL Shortener",
+    description: "Mini project",
+    bgImage: "/work-1.png",
+  },
+  {
+    title: "Result Scraper ",
+    description: "Mini project",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Apple Vision Pro Website ",
+    description: "Mini project",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "Rejouice Website Clone ",
+    description: "Mini project",
     bgImage: "/work-4.png",
+  },
+  {
+    title: "Hootsuite Clone ",
+    description: "Mini project",
+    bgImage: "/work-1.png",
+  },
+  {
+    title: "To-Do List App ",
+    description: "Mini project",
+    bgImage: "/work-2.png",
+  },
+  {
+    title: "ChatBot ",
+    description: "Mini project",
+    bgImage: "/work-3.png",
+  },
+  {
+    title: "Image Slider & Image Generator ",
+    description: "Mini project",
+    bgImage: "/work-1.png",
+  },
+  {
+    title: "Weather Web App ",
+    description: "Mini project",
+    bgImage: "/work-4.png",
+  },
+  {
+    title: "	Dynamic QR Code Generator",
+    description: "Mini project",
+    bgImage: "/work-2.png",
+  },
+  {
+    title: "Railway Ticket Booking System",
+    description: "Console based project",
+    bgImage: "/work-3.png",
+  },
+  {
+    title: "Hotel Management System ",
+    description: "Console based project",
+    bgImage: "/work-1.png",
   },
 ];
 
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
+    title: "Web Development",
     description: "Web development is the process of building, programming...",
     link: "",
   },
@@ -132,8 +219,8 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "MERN Stack, Next Js, React Native",
+    title: "Languages & Framework",
+    description: "C++ & MERN Stack, Next Js, React Native",
   },
   {
     icon: assets.edu_icon,
@@ -145,7 +232,7 @@ export const infoList = [
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 30 projects",
+    description: "Built more than 30+ projects",
   },
 ];
 
