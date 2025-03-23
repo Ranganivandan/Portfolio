@@ -112,7 +112,7 @@ export const workData = [
   {
     title: "Task Management & Community Support Platform",
     description: "Fullstack project",
-    bgImage: "/Task.png",
+    bgImage: "/task.png",
   },
   {
     title: "Real-Time Chat Application",
