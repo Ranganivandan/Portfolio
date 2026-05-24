@@ -29,11 +29,13 @@ const Loader = ({ hidden }) => (
       opacity: hidden ? 0 : 1,
       pointerEvents: hidden ? 'none' : 'all',
       transition: 'opacity 0.6s ease',
+      padding: '0 20px',
+      textAlign: 'center',
     }}
   >
     <div style={{
       fontFamily: 'var(--font-primary)',
-      fontSize: '3rem',
+      fontSize: 'clamp(2.5rem, 15vw, 4rem)',
       fontWeight: 800,
       background: 'linear-gradient(90deg,#6c63ff,#ff6584,#43e97b)',
       WebkitBackgroundClip: 'text',
@@ -45,15 +47,16 @@ const Loader = ({ hidden }) => (
     </div>
     <div style={{
       color: 'var(--text-muted)',
-      fontSize: '0.85rem',
-      marginBottom: 20,
+      fontSize: 'clamp(0.75rem, 4vw, 0.9rem)',
+      marginBottom: 24,
       fontFamily: 'var(--font-code)',
       letterSpacing: '1px',
     }}>
       Building something amazing...
     </div>
     <div style={{
-      width: 200,
+      width: '80%',
+      maxWidth: 240,
       height: 4,
       background: 'rgba(255,255,255,0.08)',
       borderRadius: 2,
