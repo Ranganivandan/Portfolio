@@ -1014,10 +1014,18 @@
 @media (max-width: 768px) {
   .timeline::before { left: 20px; }
   .timeline-item { grid-template-columns: 40px 1fr; }
-  .timeline-item.left .timeline-content { grid-column: 2; text-align: left; }
-  .timeline-item.right .timeline-spacer { display: none; }
-  .timeline-item.right .timeline-dot-col { grid-column: 1; }
-  .timeline-item.right .timeline-content { grid-column: 2; }
+  
+  /* Hide empty spacer divs on mobile */
+  .timeline-item.left > div:nth-child(3) { display: none; }
+  .timeline-item.right > div:nth-child(1) { display: none; }
+  
+  /* Force dot to col 1, content to col 2 on the same row */
+  .timeline-item.left .timeline-dot-col { grid-column: 1; grid-row: 1; }
+  .timeline-item.left .timeline-content { grid-column: 2; grid-row: 1; text-align: left; }
+  
+  .timeline-item.right .timeline-dot-col { grid-column: 1; grid-row: 1; }
+  .timeline-item.right .timeline-content { grid-column: 2; grid-row: 1; }
+  
   .education-card { grid-template-columns: 1fr; }
 }
 
@@ -1401,7 +1409,7 @@
 
 .loader-logo {
   font-family: var(--font-primary);
-  font-size: 3rem;
+  font-size: clamp(2rem, 10vw, 3rem);
   font-weight: 800;
   background: var(--gradient-text);
   -webkit-background-clip: text;
