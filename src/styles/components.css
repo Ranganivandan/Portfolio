@@ -1430,3 +1430,34 @@
   60% { width: 80%; }
   100% { width: 100%; }
 }
+
+/* === MOBILE OPTIMIZATIONS === */
+@media (max-width: 768px) {
+  .hero-section { padding: 120px 16px 60px; }
+  .about-section, .skills-section, .projects-section, .experience-section, .achievements-section, .contact-section {
+    padding: 80px 0;
+  }
+  .section-title { font-size: clamp(2rem, 8vw, 2.5rem); }
+  .section-subtitle { margin-bottom: 40px; font-size: 0.95rem; }
+  
+  .hero-name { font-size: clamp(2.4rem, 10vw, 3rem); }
+  .hero-typewriter { font-size: 1rem; }
+  
+  .project-card { padding: 24px; }
+  .timeline-content { padding: 20px; }
+  .education-card { padding: 24px; }
+  .contact-form { padding: 24px; }
+  .about-text h3 { font-size: 1.4rem; }
+  .contact-info h3 { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-btns { flex-direction: column; width: 100%; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .hero-stat { padding: 12px; }
+  .hero-stat-value { font-size: 1.3rem; }
+  .hero-stat-label { font-size: 0.7rem; }
+  .skill-category-card { padding: 20px; }
+  .about-info-grid { grid-template-columns: 1fr; gap: 12px; }
+}
